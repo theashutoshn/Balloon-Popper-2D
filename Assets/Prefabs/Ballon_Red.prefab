@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 6868209683856810738}
   - component: {fileID: 2164231762389188573}
   - component: {fileID: 1844336017736674661}
-  m_Layer: 0
+  - component: {fileID: 3031269364358198397}
+  - component: {fileID: 7137880677463264767}
+  m_Layer: 7
   m_Name: Ballon_Red
-  m_TagString: Untagged
+  m_TagString: Balloon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 370793213
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 798767873, guid: b4f4400116a066f40a43804cdaa65178, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -119,3 +121,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2e485c02c7fa7e45bd9fdd161020cf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3031269364358198397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7349109878375162280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35707d927adfd8a43b68f7f2c37ce07b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &7137880677463264767
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7349109878375162280}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0008856416, y: 0.0664224}
+  serializedVersion: 2
+  m_Radius: 0.08737816
