@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField]
-    private GameObject _ballonPrefab;
+    private GameObject[] _ballonPrefab;
 
     private bool _stopSpawning;
     void Start()
@@ -24,7 +24,7 @@ public class SpawnManager : MonoBehaviour
         while(_stopSpawning == false)
         {
             Vector3 posToSpawn = new Vector3(Random.Range(-8.38f, 8.38f), -6.4f, 0);
-            Instantiate(_ballonPrefab, posToSpawn, Quaternion.identity);
+            Instantiate(_ballonPrefab[Random.Range(0, 4)], posToSpawn, Quaternion.identity);
             yield return new WaitForSeconds(2f);
         }
     }
