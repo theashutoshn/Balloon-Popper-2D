@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4637083847083509376}
   - component: {fileID: 9121325055602145057}
   - component: {fileID: 4439170632316576350}
+  - component: {fileID: 560640706127218620}
   m_Layer: 7
   m_Name: balloon_yellow
   m_TagString: Balloon
@@ -146,3 +147,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35707d927adfd8a43b68f7f2c37ce07b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &560640706127218620
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138370614820221798}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5fe9930f0025c5447afb4e148dd571d6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

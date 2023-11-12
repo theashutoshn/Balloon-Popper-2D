@@ -25,7 +25,7 @@ public class SpawnManager : MonoBehaviour
         {
             Vector3 posToSpawn = new Vector3(Random.Range(-8.38f, 8.38f), -6.4f, 0);
             Instantiate(_ballonPrefab[Random.Range(0, 4)], posToSpawn, Quaternion.identity);
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(0.5f);
         }
     }
 }

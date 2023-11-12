@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class BalloonBrust : MonoBehaviour
 {
-    
+    private Animator _anim;
     void Start()
     {
-        
+        _anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -26,8 +26,9 @@ public class BalloonBrust : MonoBehaviour
            
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
+                _anim.SetTrigger("BalloonBrust");
                 Debug.Log("Ballon Brust");
-                Destroy(this.gameObject);
+                Destroy(this.gameObject, 0.25f);
             }
             
         }
