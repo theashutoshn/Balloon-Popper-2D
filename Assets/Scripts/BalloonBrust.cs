@@ -5,18 +5,26 @@ using UnityEngine;
 public class BalloonBrust : MonoBehaviour
 {
     private Animator _anim;
+    
+    [SerializeField]
+    private AudioClip _popClip;
+   
     void Start()
     {
         _anim = GetComponent<Animator>();
+        if (_anim == null)
+        {
+            Debug.Log("Animation is Null");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        BallonBrust();
+        BrustSystem();
     }
 
-    public void BallonBrust()
+    public void BrustSystem()
     {
         if(Input.GetMouseButtonDown(0))
         {
@@ -27,6 +35,7 @@ public class BalloonBrust : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
                 _anim.SetTrigger("BalloonBrust");
+                AudioSource.PlayClipAtPoint(_popClip, transform.position);
                 Debug.Log("Ballon Brust");
                 Destroy(this.gameObject, 0.25f);
             }

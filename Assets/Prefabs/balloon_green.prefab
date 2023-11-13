@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35707d927adfd8a43b68f7f2c37ce07b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _popClip: {fileID: 8300000, guid: 382af1a01b74a8144b5cbff50ee0bdd9, type: 3}
 --- !u!95 &7031729782394057714
 Animator:
   serializedVersion: 5
