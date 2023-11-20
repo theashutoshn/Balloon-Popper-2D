@@ -5,10 +5,12 @@ using UnityEngine;
 public class BalloonBrust : MonoBehaviour
 {
     private Animator _anim;
-    
+
     [SerializeField]
     private AudioClip _popClip;
-   
+
+    public UIManager _ui;
+
     void Start()
     {
         _anim = GetComponent<Animator>();
@@ -16,6 +18,7 @@ public class BalloonBrust : MonoBehaviour
         {
             Debug.Log("Animation is Null");
         }
+        _ui = GameObject.Find("UIManager").GetComponent<UIManager>();
     }
 
     // Update is called once per frame
@@ -36,6 +39,7 @@ public class BalloonBrust : MonoBehaviour
             {
                 _anim.SetTrigger("BalloonBrust");
                 AudioSource.PlayClipAtPoint(_popClip, transform.position);
+                _ui.PlayerScore();
                 Debug.Log("Ballon Brust");
                 Destroy(this.gameObject, 0.25f);
             }
