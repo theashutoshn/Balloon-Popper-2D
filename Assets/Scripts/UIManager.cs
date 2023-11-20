@@ -18,8 +18,8 @@ public class UIManager : MonoBehaviour
     {
         
     }
-    public void PlayerScore()
+    public void PlayerScore(int score)
     {
-        _score += 10;
+        _score += score;
     }
 }

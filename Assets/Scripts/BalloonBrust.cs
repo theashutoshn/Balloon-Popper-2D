@@ -39,7 +39,7 @@ public class BalloonBrust : MonoBehaviour
             {
                 _anim.SetTrigger("BalloonBrust");
                 AudioSource.PlayClipAtPoint(_popClip, transform.position);
-                _ui.PlayerScore();
+                _ui.PlayerScore(20);
                 Debug.Log("Ballon Brust");
                 Destroy(this.gameObject, 0.25f);
             }
